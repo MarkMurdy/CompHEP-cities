@@ -12,10 +12,12 @@ map = Basemap(llcrnrlon=-119,llcrnrlat=22,urcrnrlon=-64,urcrnrlat=49,
 map.drawstates()
 map.drawcountries()
 map.drawcoastlines()
+map.bluemarble()
 
 # Get the location of each city and plot it
 for (city, latitude, longitude) in cities:
     x, y = map(longitude, latitude)
     map.plot(x, y, marker='o',color='Red')
-#plt.show()
-plt.savefig("map.png")
+
+plt.savefig("my_map.png")
+plt.show()
