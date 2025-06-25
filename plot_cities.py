@@ -3,7 +3,8 @@ from mpl_toolkits.basemap import Basemap
 
 cities = [["Chicago",48, -100],
           ["Boston", 49, -90],
-          ["Northport", 41, -73]]
+          ["Northport", 41, -73],
+         ["Placerville", 38.7, -120.8]]
 scale = 5
 
 map = Basemap(llcrnrlon=-119,llcrnrlat=22,urcrnrlon=-64,urcrnrlat=49,
@@ -18,5 +19,6 @@ map.bluemarble()
 for (city, latitude, longitude) in cities:
     x, y = map(longitude, latitude)
     map.plot(x, y, marker='o',color='Red')
+
 plt.savefig("my_map.png")
 plt.show()
