@@ -1,6 +1,8 @@
 # virtual environments
 .venv
 
-
 # Jupyter
 .ipynb
+
+# output
+.png
