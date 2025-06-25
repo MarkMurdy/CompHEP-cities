@@ -2,7 +2,7 @@
 .venv
 
 # Jupyter
-.ipynb
+*.ipynb
 
 # output
-.png
+*.png
