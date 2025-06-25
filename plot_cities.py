@@ -5,7 +5,9 @@ cities = [["Chicago",48, -100],
           ["Boston", 49, -90],
           ["Northport", 41, -73],
           ["Placerville", 38.7, -120.8],
-          ["Topeka", 39.0, -95.7]]
+          ["Topeka", 39.0, -95.7],
+          ["Rockford", 42.2677, -89.0878]]
+
 scale = 5
 
 map = Basemap(llcrnrlon=-119,llcrnrlat=22,urcrnrlon=-64,urcrnrlat=49,
