@@ -22,6 +22,7 @@ map.bluemarble()
 for (city, latitude, longitude) in cities:
     x, y = map(longitude, latitude)
     map.plot(x, y, marker='o',color='Red')
+    plt.text(x + 20000, y + 20000, city, fontsize=9, color='white')
 
 plt.savefig("my_map.png")
 plt.show()
