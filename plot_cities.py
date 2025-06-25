@@ -17,9 +17,6 @@ map.bluemarble()
 for (city, latitude, longitude) in cities:
     x, y = map(longitude, latitude)
     map.plot(x, y, marker='o',color='Red')
-<<<<<<< main
-plt.show()
-=======
+
 plt.savefig("my_map.png")
 plt.show()
->>>>>>> main
